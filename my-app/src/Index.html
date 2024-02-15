@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var browser ={
+            AppName: navigator.appName,
+            Apcode: navigator.appCodeName,
+            Language: navigator.language,
+            appVersion: navigator.appVersion,
+            cookieEnabled: navigator.cookieEnabled,
+            connection: navigator.connection,
+            onLine: navigator.onLine,
+            deviceMemory: navigator.deviceMemory,
+            javaEnabled: navigator.javaEnabled,
+            deviceMemory: navigator.deviceMemory,
+            languages: navigator.languages,
+            platform: navigator.platform,
+            plugins: navigator.plugins,
+            product: navigator.product,
+            storage: navigator.storage,
+            userAgent: navigator.userAgent,
+            vendor: navigator.vendor,
+            webdriver: navigator.webdriver 
+        }
+        console.log(browser);
+        Object.entries(browser).map(([key, val])=>{
+            document.write(` ${key} : ${val} <br>`);
+        })
+    </script>
+</body>
+</html>
